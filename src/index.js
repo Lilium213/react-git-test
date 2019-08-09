@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './playground/counter-example';
+import validator from 'validator';
+
+console.log(validator.isEmail('sdsadsda.com'));
 
 class IndecisionApp extends React.Component {
 
