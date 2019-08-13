@@ -1,0 +1,20 @@
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $l-size 0;
+    padding-right: $s-size;
+    border-bottom: 1px solid #ffffff29;
+
+    .option__title{
+        list-style-position: inside;
+        padding-left: $s-size;
+        color: white;
+    }
+
+    .option__remove{
+        margin: 0;
+        color: $off-white;
+        cursor: pointer;
+    }
+}

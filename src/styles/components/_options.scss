@@ -1,0 +1,39 @@
+.options{
+    .options__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #3c4251;
+        padding: 0 $s-size;
+
+        h3,
+        p{
+            color: $off-white;
+        }
+
+        p{
+            cursor: pointer;
+        }
+    }
+
+    .options__list{
+        background: $light-blue;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .options--empty{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.6rem;
+        border-bottom: 1px solid #ffffff29;
+        background: $light-blue;
+
+        p{
+            color: $off-white;
+            padding-left: $s-size;
+        }
+    }
+}
+

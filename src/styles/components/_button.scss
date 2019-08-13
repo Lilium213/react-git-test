@@ -1,0 +1,23 @@
+.button{
+    padding: $s-size;
+    background: #8048c8;
+    border: none;
+    box-shadow: 0 2px #6930b1;
+    color: white;
+    cursor: pointer;
+
+    &--big{
+        @extend .button;
+        width: 100%;
+        padding: $l-size 0;
+        font-size: $l-size;
+        font-weight: bold;
+    }
+
+    &:disabled{
+        opacity: .5;
+        cursor: not-allowed;
+    }
+
+
+}

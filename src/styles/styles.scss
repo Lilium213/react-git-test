@@ -1,0 +1,25 @@
+@import './base/settings';
+@import './base/base';
+@import './components/action';
+@import './components/container';
+@import './components/header';
+@import './components/button';
+@import './components/button--big';
+@import './components/options';
+@import './components/option';
+@import './components/add-option';
+@import './components/react-modal';
+
+
+
+@media (max-width: $desktop-breakpoint){
+
+    .add-option{
+        flex-direction: column;
+
+        input{
+            margin-right: 0;
+            margin-bottom: $s-size;
+        }
+    }
+}

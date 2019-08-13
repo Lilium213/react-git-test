@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './playground/counter-example';
 import IndecisionApp from "./components/IndecisionApp";
+import 'normalize.css/normalize.css';
+import './styles/styles.scss';
 
-ReactDOM.render(<IndecisionApp />, document.getElementById('root'));
+ReactDOM.render(<IndecisionApp />,document.getElementById('root'));
+

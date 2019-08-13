@@ -2,14 +2,14 @@ import React from "react";
 
 
 export default class AddOption extends React.Component{
+    state = {
+        error: ''
+    };
+
     constructor(props){
         super(props);
 
         this.handleAddOption = this.handleAddOption.bind(this);
-
-        this.state = {
-            error: ''
-        };
     }
 
     handleAddOption(event) {
@@ -27,10 +27,14 @@ export default class AddOption extends React.Component{
         return (
             <div>
                 <form onSubmit={this.handleAddOption}>
-                    <input type="text" name="option"/>
-                    <button>Add option</button>
+                    {this.state.error && <div className="error">{this.state.error}</div>}
+                    <div className="add-option">
+                        <input type="text" name="option"/>
+                        <button className="button">Add option</button>
+                    </div>
+
                 </form>
-                {this.state.error && <div>{this.state.error}</div>}
+
             </div>
         );
     }
